@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Your Project | Euro Team B2B</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/" class="logo">Euro Team B2B</a>
+      <nav class="nav" id="nav">
+        <a href="how-it-works.html">How It Works</a>
+        <a href="for-project-owners.html">For Project Owners</a>
+        <a href="for-investors.html">For Investors</a>
+        <a href="about-us.html">About</a>
+        <a href="submit-project.html" class="btn btn--primary">Submit Project</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <section class="hero hero--sub">
+    <div class="container">
+      <h1>Submit Your Project</h1>
+      <p class="subtitle">First step toward professional investor presentation. We'll contact you within 48 hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form class="form" onsubmit="alert('Thank you! We will contact you soon.'); return false;">
+        <div class="form__group">
+          <label>Company Name *</label>
+          <input type="text" required />
+        </div>
+        <div class="form__group">
+          <label>Contact Person *</label>
+          <input type="text" required />
+        </div>
+        <div class="form__group">
+          <label>Email *</label>
+          <input type="email" required />
+        </div>
+        <div class="form__group">
+          <label>Country / Region *</label>
+          <input type="text" required />
+        </div>
+        <div class="form__group">
+          <label>Project Sector *</label>
+          <select required>
+            <option>Renewable Energy</option>
+            <option>Infrastructure</option>
+            <option>Real Estate</option>
+            <option>Technology</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label>Project Stage *</label>
+          <select required>
+            <option>Early Stage</option>
+            <option>Ready-to-Build</option>
+            <option>Under Construction</option>
+            <option>Operational</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label>Project Size (CAPEX € or MW)</label>
+          <input type="text" />
+        </div>
+        <div class="form__group">
+          <label>Do you have a teaser? *</label>
+          <div class="radio-group">
+            <label><input type="radio" name="teaser" value="yes" required> Yes</label>
+            <label><input type="radio" name="teaser" value="no"> No (we will draft it)</label>
+          </div>
+        </div>
+        <div class="form__group">
+          <label>Short Project Description *</label>
+          <textarea rows="4" required></textarea>
+        </div>
+        <div class="form__group">
+          <label class="checkbox">
+            <input type="checkbox" required>
+            I agree to be contacted and to the processing of my data per the <a href="privacy-policy.html">Privacy Policy</a>.
+          </label>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg">Submit Your Project</button>
+      </form>
+
+      <p class="text-sm text-center mt-4">Typical response time: <strong>within 48 hours</strong>. All data is confidential.</p>
+
+      <div id="sample-teaser" class="mt-6 text-center">
+        <a href="#" class="link-cta">Download sample teaser (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div><p><strong>Euro Team B2B Services S.R.L.</strong><br>Bucharest, Romania</p></div>
+      <nav class="footer-nav">
+        <a href="/">Home</a><a href="how-it-works.html">How It Works</a><a href="for-project-owners.html">Project Owners</a>
+        <a href="for-investors.html">Investors</a><a href="about-us.html">About</a><a href="submit-project.html">Submit</a>
+        <a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="terms-of-use.html">Terms</a>
+      </nav>
+      <p class="disclaimer">© 2025 Euro Team B2B Services S.R.L. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
