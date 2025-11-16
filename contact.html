@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Euro Team B2B</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/" class="logo">Euro Team B2B</a>
+      <nav class="nav" id="nav">
+        <a href="how-it-works.html">How It Works</a>
+        <a href="for-project-owners.html">For Project Owners</a>
+        <a href="for-investors.html">For Investors</a>
+        <a href="about-us.html">About</a>
+        <a href="submit-project.html" class="btn btn--primary">Submit Project</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <section class="hero hero--sub">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p class="subtitle">Get in touch with our Bucharest team.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Reach Out</h2>
+        <p><strong>Euro Team B2B Services S.R.L.</strong><br>
+           Headquarters: Bucharest, Romania<br>
+           Email: <a href="mailto:contact@euroteamb2b.ro">contact@euroteamb2b.ro</a><br>
+           Phone: <a href="tel:+4031XXXXXXX">+40 31 XXX XXX</a></p>
+        <p class="text-sm">Typical response time: <strong>within 24 hours</strong></p>
+      </div>
+      <form class="form" onsubmit="alert('Message sent!'); return false;">
+        <div class="form__group">
+          <label>Name *</label>
+          <input type="text" required />
+        </div>
+        <div class="form__group">
+          <label>Email *</label>
+          <input type="email" required />
+        </div>
+        <div class="form__group">
+          <label>Subject *</label>
+          <input type="text" required />
+        </div>
+        <div class="form__group">
+          <label>Message *</label>
+          <textarea rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div><p><strong>Euro Team B2B Services S.R.L.</strong><br>Bucharest, Romania</p></div>
+      <nav class="footer-nav">
+        <a href="/">Home</a><a href="how-it-works.html">How It Works</a><a href="for-project-owners.html">Project Owners</a>
+        <a href="for-investors.html">Investors</a><a href="about-us.html">About</a><a href="submit-project.html">Submit</a>
+        <a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a><a href="terms-of-use.html">Terms</a>
+      </nav>
+      <p class="disclaimer">© 2025 Euro Team B2B Services S.R.L. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
